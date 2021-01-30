@@ -7,7 +7,9 @@
  */
 
 namespace App\Console\Commands;
+
 use Illuminate\Console\Command;
+
 class TimorController extends Command
 {
     public function timr()
