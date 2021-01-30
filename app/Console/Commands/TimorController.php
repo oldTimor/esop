@@ -10,8 +10,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 class TimorController extends Command
 {
-    public function timr()
-    {
+    public function timr(){
         print_r(['aaa','aaaaaaa']);
         echo 'aaa';
     }
