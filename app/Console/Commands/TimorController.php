@@ -12,9 +12,22 @@ use Illuminate\Console\Command;
 
 class TimorController extends Command
 {
-    public function timr()
+    /**
+     * 命令行执行命令
+     * @var string
+     */
+    protected $signature = 'job:timor_index {arg_name}';
+
+    /**
+     * 命令描述
+     *
+     * @var string
+     */
+    protected $description = 'job:timor_index desc';
+    public function handle()
     {
-        print_r(['aaa', 'aaaaaaa']);
-        echo 'aaa';
+        $arg_name = $this->argument('arg_name');
+        echo json_encode(['name'=>$arg_name]);
+        return json_encode(['name'=>$arg_name]);
     }
 }

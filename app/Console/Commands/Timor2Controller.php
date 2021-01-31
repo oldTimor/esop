@@ -17,4 +17,5 @@ class Timor2Controller extends Command
         print_r(['aaa','aaaaaaa']);
         echo 'aaa';
     }
+    function handle(){}
 }
